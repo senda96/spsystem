@@ -1,0 +1,5 @@
+Select hora, count(hora)
+from reservaciones
+group by hora
+
+SELECT especialidades.nom_espe AS Especialidad, COUNT(usuarios.cod_user) AS Cantidad FROM especialidades INNER JOIN usuarios ON especialidades.cod_espe = usuarios.cod_espe GROUP BY especialidades.nom_espe
